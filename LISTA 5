@@ -1,0 +1,44 @@
+-------------------exercicio 2
+#include <stdio.h>
+
+int main()
+{
+    int numero;
+    float result= 1.0;
+    scanf("%d", &numero);
+    for(int i = 1; i < numero; i++){
+        result = result + 1.0/i;
+    }
+    printf("%f", result);
+
+    return 0;
+}
+
+--------------------exercicio 3
+#include<stdio.h>
+int main(){
+    int numero, n, par=0, impar=0, numpar=0, numimpar=0;
+    float mediapar, mediaimpar;
+    printf("Digite quantos numeros serao lidos: ");
+    scanf("%d", &numero);
+    for(int i = 0; i < numero; i++){
+        printf("Numeros: ");
+        scanf("%d", &n);
+        if(n <= 0){
+            break;
+        }
+        if(n % 2 == 0){
+            numpar++;
+            par = par + n;
+        }
+            else{
+                numimpar++;
+                impar = impar + n;
+            }
+        
+    }
+    mediapar = par/numpar;
+    mediaimpar = impar/numimpar;
+    printf(" media %f pares %f impares.", mediapar, mediaimpar);
+    return 0;
+}
