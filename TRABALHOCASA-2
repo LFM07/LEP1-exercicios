@@ -1,0 +1,17 @@
+---EXERCICIO 2---
+#include<stdio.h>
+int main(){
+    int linhas, digito = 1;
+    printf("Digite o numero de linhas: \n");
+    scanf("%d", &linhas);
+    if(linhas > 10){
+        return 1;
+    }
+    for(int i = 1; i <= linhas ; i++){
+        for(int j = 1; j <= i; j++){
+            printf("*");
+            }
+        printf("\n");
+        }
+    return 0;
+}
