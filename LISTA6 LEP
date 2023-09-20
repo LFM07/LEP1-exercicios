@@ -53,3 +53,17 @@ int main()
 }
 
 ------EXERCICIO 3--------
+
+#include<stdio.h>
+
+int tabuada(int numero){
+    for(int i; i < 11; i++){
+        printf("%d x %d = %d \n", numero, i, i*numero);
+    }
+}
+int main(){
+    int num;
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+    tabuada(num);
+}
