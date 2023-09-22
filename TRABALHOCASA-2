@@ -57,3 +57,34 @@ int main(){
     arvore(linhas, n);
     return 0;
 }
+---------- EXERCICIO 5 ---------------
+#include<stdio.h>
+int ehMultiplo(int r, int s){
+    if(r % s == 0){
+        return 1;
+    }
+        else{
+            return 0;
+        }
+}
+void multiplos(int q, int x, int y){
+    int i;
+    for(i = 0; i <= q ; i++){
+        if(ehMultiplo(i, x) || ehMultiplo(i, y) ){
+            printf(" %d ", i);
+        }
+    }
+    i++;
+}
+int main(){
+    int qtd, num1, num2;
+    printf("Digite quantos numeros serao lidos: \n");
+    printf("Digite os dois numeros que voce quer os multiplos: \n");
+    scanf("%d%d%d", &qtd, &num1, &num2);
+
+    printf("Os %d primeiros números múltiplos de %d ou %d são: \n", qtd, num1, num2);
+    multiplos(qtd, num1, num2);
+
+
+    return 0;
+}
