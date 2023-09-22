@@ -69,9 +69,11 @@ int ehMultiplo(int r, int s){
 }
 void multiplos(int q, int x, int y){
     int i;
-    for(i = 0; i <= q ; i++){
+    int cont=0;
+    for(i = 0; cont < q ; i++){
         if(ehMultiplo(i, x) || ehMultiplo(i, y) ){
             printf(" %d ", i);
+            cont++;
         }
     }
     i++;
